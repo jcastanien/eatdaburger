@@ -1,0 +1,52 @@
+body {
+
+    background-color: #e1993c;
+  }
+
+.card {
+    
+    background-color: #ffd49c
+}
+
+.list-group-item {
+
+    background-color: #ffe9d5
+}
+
+.imageOne {
+
+    padding-top: 100px;
+}
+
+.headtext {
+    font-size: 80px;
+}
+
+/* .bordercross {
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+}
+
+.container {
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 255, 123); */
+
+/*   
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+   */

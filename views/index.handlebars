@@ -1,0 +1,72 @@
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-sm-3">
+      <h1 class="text-center headtext">Eat A Burger!</h1>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">Burgers to be devoured!</h4>
+          <p class="card-text">Below is list of your favorite burgers</p>
+        </div>
+        <ul class="list-group list-group-flush">
+        {{#each burgers}}
+        {{#unless devoured}}
+        <li class="eatburger list-group-item" data-id="{{id}}" data-nowdevoured="{{devoured}}">{{burger_name}}</li>
+      {{!-- <a href="#!" class="devour collection-item custom-font" data-id="{{id}}" data-nowdevoured="{{devoured}}">{{burger_name}}</a> {{/unless}} {{/each}} --}}
+        {{!-- {{> burgers/burger-block sleep=true}} --}}
+        {{/unless}}
+        {{/each}}
+        </ul>
+    </div>
+  </div>
+  
+
+    <div class="col-sm-4">
+      <img class="imageOne" src="/assets/img/burgers.png" alt="burger image" width="400" />
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Burgers you've devoured!</h4>
+                <p class="card-text">Wow! look at all the burgers you've ate!</p>
+              </div>
+              <ul class="list-group list-gorup-flush">
+                {{#each burgers}}
+                {{#if devoured}}
+                <li data-id="{{id}}" data-nowdevoured="{{devoured}}">{{burger_name}}</li>
+                {{!-- {{> burgers/burger-block sleep=false}} --}}
+                {{/if}}
+                {{/each}}
+              </ul>
+          </div>
+        </div>
+        </div>
+        <br>
+  <div class="row">
+    <div class="col-md-4 offset-sm-4 bordercross">
+      <h2 class="text-center">Add a Burger</h2>
+      <form class="create-form text-center">
+        <div class="form-group">
+          <label for="burger">Burger Name:</label>
+          <input type="text" id="burgerID" name="name">
+        </div>
+
+
+        <button type="submit">Add Burger</button>
+      </form>
+    </div>
+  </div>
+
+
